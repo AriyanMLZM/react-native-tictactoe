@@ -1,15 +1,15 @@
 {
   "expo": {
-    "name": "ticTocToe",
-    "slug": "ticTocToe",
+    "name": "ticTacToe",
+    "slug": "ticTacToe",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/myicon.png",
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#222222"
     },
     "assetBundlePatterns": [
       "**/*"
@@ -19,12 +19,23 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/myicon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.ariyan8142.ticTacToe"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/myicon.png",
+      "output": "single",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "61a4f984-ac88-49a9-b1ff-b30f341000d8"
+      }
+    },
+    "experiments": {
+      "baseUrl": "/react-native-tictactoe-deploy"
     }
   }
 }
